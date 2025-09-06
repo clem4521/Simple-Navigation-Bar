@@ -6,4 +6,4 @@ Why creating a navigation bar? \
 Learning the fundamentals of creating a navigation bar
 
 Tech Stack\
-Html,Css and JavaScript
+Html, Css and JavaScript

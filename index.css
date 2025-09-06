@@ -8,10 +8,14 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    z-index: 0;
+}
 nav{
     display: flex;
     position: relative;
     background-color:var(--primary);
+    z-index: 100;
 }
 .inside{
     margin: 20px;
@@ -43,33 +47,54 @@ ul li:hover{
     background-color: var(--dark-primary);
     border-radius: 5px;
 }
-.middle{
-    position: relative;
-    left:25px;
-}
+
 .menu{
     position: absolute;
     right: 20px;
     top: 19px;
-    
+    display: none;
+}
+.close{
+    position: absolute;
+    right: 20px;
+    top: 19px;
+    display: none;
 }
 @media (min-width: 789px) and (max-width: 899px) {
     .brandName{
-        display: none;
+        
     }
     nav{
-        height: 60px;
+        /* height: 60px; */
     }
+    ul{
+        top: 20%;
+        right: 0%;
+        transform: translate(0%);
+    }
+    .menu{
+        display: none;
+    }
+    
 }
 @media (min-width:400px) and (max-width:788px){
     body{
-        background-color:var(--primary);
+        background-color:white;
     }
     nav{
         position: static;
-        height: 100hv;
     }
     ul{
         flex-direction: column;
+        display: none;
+        
+    }
+    .middle{
+        position: relative;
+        left:25px;
+    }
+    
+    .menu{
+        display: block;
     }
 }
