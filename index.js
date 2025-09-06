@@ -9,11 +9,13 @@ Menu.addEventListener("click",()=>{
     Close.style.display = "block"
     Menu.style.display = "none"
     Nav.style.height = "100vh"
+    Nav.style.position = "absolute"
 });
 Close.addEventListener("click",()=>{
     Body.style.backgroundColor = "white";
     NavLinks.style.display = "none"
     Close.style.display = "none"
     Menu.style.display = "block"
+    Nav.style.position = "relative"
     Nav.style.removeProperty('height')
 });
